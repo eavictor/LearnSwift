@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Xylophone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundNew" translatesAutoresizingMaskIntoConstraints="NO" id="Vtu-uK-vmw">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <variation key="heightClass=regular" image="BackgroundiPad"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="Ebu-fF-FJe">
+                                <rect key="frame" x="132" y="19.333333333333343" width="550.33333333333337" height="248.00000000000003"/>
+                            </imageView>
+                            <stackView contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Io-fe-Jie">
+                                <rect key="frame" x="131" y="11.666666666666657" width="550.33333333333337" height="261.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKI-7Y-qM4">
+                                        <rect key="frame" x="0.0" y="0.0" width="61.666666666666664" height="261.33333333333331"/>
+                                        <state key="normal" backgroundImage="key1"/>
+                                        <state key="highlighted" backgroundImage="key1Pressed"/>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchDown" id="Eg3-3N-ffx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGy-af-5eL">
+                                        <rect key="frame" x="69.666666666666657" y="0.0" width="61.666666666666657" height="261.33333333333331"/>
+                                        <state key="normal" backgroundImage="key2"/>
+                                        <state key="highlighted" backgroundImage="key2Pressed"/>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchDown" id="cTv-Hy-365"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VA6-5b-b0J">
+                                        <rect key="frame" x="139.33333333333331" y="0.0" width="62" height="261.33333333333331"/>
+                                        <state key="normal" backgroundImage="key3"/>
+                                        <state key="highlighted" backgroundImage="key3Pressed"/>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchDown" id="0Uf-g8-vK8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFD-ah-LwQ">
+                                        <rect key="frame" x="209.33333333333331" y="0.0" width="61.666666666666686" height="261.33333333333331"/>
+                                        <state key="normal" backgroundImage="key4"/>
+                                        <state key="highlighted" backgroundImage="key4Pressed"/>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchDown" id="MWh-eu-ckq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-ag-28c">
+                                        <rect key="frame" x="279" y="0.0" width="61.666666666666686" height="261.33333333333331"/>
+                                        <state key="normal" backgroundImage="key5"/>
+                                        <state key="highlighted" backgroundImage="key5Pressed"/>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchDown" id="8eV-ja-DyJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edr-ZN-4Yp">
+                                        <rect key="frame" x="348.66666666666669" y="0.0" width="62" height="261.33333333333331"/>
+                                        <state key="normal" backgroundImage="key6"/>
+                                        <state key="highlighted" backgroundImage="key6Pressed"/>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchDown" id="GgH-Uy-mFP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJc-HT-KR0">
+                                        <rect key="frame" x="418.66666666666663" y="0.0" width="61.666666666666686" height="261.33333333333331"/>
+                                        <state key="normal" backgroundImage="key7"/>
+                                        <state key="highlighted" backgroundImage="key7Pressed"/>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchDown" id="Qba-rt-gKN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oik-Xn-IW6">
+                                        <rect key="frame" x="488.33333333333337" y="0.0" width="62" height="261.33333333333331"/>
+                                        <state key="normal" backgroundImage="key8"/>
+                                        <state key="highlighted" backgroundImage="key8Pressed"/>
+                                        <connections>
+                                            <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchDown" id="IB0-YR-lbf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Io-fe-Jie" secondAttribute="height" multiplier="995:535" id="Xxa-WG-jWt"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Xxa-WG-jWt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="Xxa-WG-jWt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Xxa-WG-jWt"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8X-jy-8Y5">
+                                <rect key="frame" x="306" y="0.0" width="200" height="11.666666666666666"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a8X-jy-8Y5" secondAttribute="height" multiplier="120:7" id="fJP-uj-g9m"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a8X-jy-8Y5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="35:1125" id="05h-Wv-jMk"/>
+                            <constraint firstItem="4Io-fe-Jie" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="49L-6H-6DW"/>
+                            <constraint firstItem="a8X-jy-8Y5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="56:765" id="5ph-DA-Lg4"/>
+                            <constraint firstItem="a8X-jy-8Y5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6BS-Pk-Wfw"/>
+                            <constraint firstItem="a8X-jy-8Y5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C9e-A0-yZc"/>
+                            <constraint firstItem="4Io-fe-Jie" firstAttribute="height" secondItem="Vtu-uK-vmw" secondAttribute="height" multiplier="535:768" id="HVD-aG-UA1"/>
+                            <constraint firstItem="Ebu-fF-FJe" firstAttribute="centerY" secondItem="4Io-fe-Jie" secondAttribute="centerY" constant="1" id="Ing-nG-uvR"/>
+                            <constraint firstItem="4Io-fe-Jie" firstAttribute="top" secondItem="a8X-jy-8Y5" secondAttribute="bottom" id="Kn6-mg-jQY"/>
+                            <constraint firstItem="Ebu-fF-FJe" firstAttribute="width" secondItem="4Io-fe-Jie" secondAttribute="width" id="LDd-Dh-lhk"/>
+                            <constraint firstItem="Vtu-uK-vmw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OSo-r0-Meu"/>
+                            <constraint firstAttribute="bottom" secondItem="Vtu-uK-vmw" secondAttribute="bottom" id="iRY-j6-Zhc"/>
+                            <constraint firstItem="Ebu-fF-FJe" firstAttribute="centerX" secondItem="4Io-fe-Jie" secondAttribute="centerX" constant="1" id="ofh-P3-siZ"/>
+                            <constraint firstItem="Ebu-fF-FJe" firstAttribute="height" secondItem="4Io-fe-Jie" secondAttribute="height" multiplier="259:273" id="rMd-DO-6EE"/>
+                            <constraint firstAttribute="trailing" secondItem="Vtu-uK-vmw" secondAttribute="trailing" id="vkg-4w-sXc"/>
+                            <constraint firstItem="Vtu-uK-vmw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xt0-oo-Sh3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="05h-Wv-jMk"/>
+                                <exclude reference="5ph-DA-Lg4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="05h-Wv-jMk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="HVD-aG-UA1"/>
+                                <include reference="5ph-DA-Lg4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.384236453201972" y="48.799999999999997"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackgroundNew" width="812" height="375"/>
+        <image name="BackgroundiPad" width="1366" height="1024"/>
+        <image name="Shadow" width="550.33331298828125" height="273"/>
+        <image name="key1" width="61" height="268.66665649414062"/>
+        <image name="key1Pressed" width="61" height="268.66665649414062"/>
+        <image name="key2" width="61" height="268.66665649414062"/>
+        <image name="key2Pressed" width="61" height="268.66665649414062"/>
+        <image name="key3" width="61" height="268.66665649414062"/>
+        <image name="key3Pressed" width="61" height="268.66665649414062"/>
+        <image name="key4" width="61" height="268.66665649414062"/>
+        <image name="key4Pressed" width="61" height="268.66665649414062"/>
+        <image name="key5" width="61" height="268.66665649414062"/>
+        <image name="key5Pressed" width="61" height="268.66665649414062"/>
+        <image name="key6" width="61" height="268.66665649414062"/>
+        <image name="key6Pressed" width="61" height="268.66665649414062"/>
+        <image name="key7" width="61" height="268.66665649414062"/>
+        <image name="key7Pressed" width="61" height="268.66665649414062"/>
+        <image name="key8" width="61" height="268.66665649414062"/>
+        <image name="key8Pressed" width="61" height="268.66665649414062"/>
+    </resources>
+</document>

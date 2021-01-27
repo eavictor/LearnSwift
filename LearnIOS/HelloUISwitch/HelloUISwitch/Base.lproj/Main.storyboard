@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloUISwitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yec-Sa-Vbw">
+                                <rect key="frame" x="163" y="390.66666666666669" width="51" height="30.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30.670000000000002" id="1Kg-iB-awv"/>
+                                    <constraint firstAttribute="width" constant="49" id="XeG-ph-l4e"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="makeAChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="31m-Wd-7MG"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yec-Sa-Vbw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="346.66666666666669" id="CEm-wj-iON"/>
+                            <constraint firstItem="yec-Sa-Vbw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EEd-sZ-2d4"/>
+                            <constraint firstItem="yec-Sa-Vbw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mda-D7-gxs"/>
+                            <constraint firstItem="yec-Sa-Vbw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MiQ-Ei-IOn"/>
+                            <constraint firstItem="yec-Sa-Vbw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cBc-wI-hby"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mySwitch" destination="yec-Sa-Vbw" id="HAU-Ge-1IE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

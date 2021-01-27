@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vmN-BC-9kd">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Number Guessing-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NumberGussingGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="player guess" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnS-9c-Jxf">
+                                <rect key="frame" x="20" y="108" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="6sT-wC-kXg"/>
+                                    <constraint firstAttribute="width" constant="97" id="bvO-Ws-VMc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CC2-gT-4h3">
+                                <rect key="frame" x="20" y="152" width="335" height="316"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hello" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncf-NB-WpA">
+                                        <rect key="frame" x="0.0" y="0.0" width="162.66666666666666" height="316"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hello" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRc-jW-vdh">
+                                        <rect key="frame" x="172.66666666666663" y="0.0" width="162.33333333333337" height="316"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="?A" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yos-MU-Opb">
+                                <rect key="frame" x="192.66666666666666" y="108" width="43.666666666666657" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="?B" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foF-7R-fSS">
+                                <rect key="frame" x="246.33333333333334" y="108" width="44.333333333333343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9a-fy-6FE">
+                                <rect key="frame" x="300.66666666666669" y="108" width="39" height="30"/>
+                                <state key="normal" title="Reply"/>
+                                <connections>
+                                    <action selector="reply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5P-T7-LxX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vl7-Rs-H9g">
+                                <rect key="frame" x="127" y="108" width="43" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="LlS-p9-Y4G"/>
+                                    <constraint firstAttribute="width" constant="43" id="bp7-ft-xTY"/>
+                                </constraints>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="guess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vc1-Vf-jOa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f9a-fy-6FE" firstAttribute="leading" secondItem="foF-7R-fSS" secondAttribute="trailing" constant="10" id="283-Xi-Fqr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CC2-gT-4h3" secondAttribute="trailing" constant="20" id="48I-uq-go2"/>
+                            <constraint firstItem="Yos-MU-Opb" firstAttribute="leading" secondItem="QRc-jW-vdh" secondAttribute="leading" id="4bS-t3-i6g"/>
+                            <constraint firstItem="dnS-9c-Jxf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="BK4-b7-zWf"/>
+                            <constraint firstItem="CC2-gT-4h3" firstAttribute="top" secondItem="dnS-9c-Jxf" secondAttribute="bottom" constant="10" id="Dju-aE-8pT"/>
+                            <constraint firstItem="Yos-MU-Opb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="EqE-5O-P3J"/>
+                            <constraint firstItem="foF-7R-fSS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TcP-rb-b7T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CC2-gT-4h3" secondAttribute="bottom" constant="310" id="Vxr-Gx-yWZ"/>
+                            <constraint firstItem="Vl7-Rs-H9g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="aH2-Rb-2JM"/>
+                            <constraint firstItem="f9a-fy-6FE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="guj-GP-SFU"/>
+                            <constraint firstItem="CC2-gT-4h3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rrq-db-Q1P"/>
+                            <constraint firstItem="foF-7R-fSS" firstAttribute="leading" secondItem="Yos-MU-Opb" secondAttribute="trailing" constant="10" id="slM-Vb-YLw"/>
+                            <constraint firstItem="dnS-9c-Jxf" firstAttribute="leading" secondItem="ncf-NB-WpA" secondAttribute="leading" id="wtJ-tY-KrG"/>
+                            <constraint firstItem="Vl7-Rs-H9g" firstAttribute="leading" secondItem="dnS-9c-Jxf" secondAttribute="trailing" constant="10" id="wx3-wJ-1Af"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Number Guessing" id="8rr-EE-xgK">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="lQP-mq-TI9">
+                            <connections>
+                                <action selector="reset:" destination="BYZ-38-t0r" id="x30-Ed-A8O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="computerLog" destination="QRc-jW-vdh" id="Qko-Wk-Zb9"/>
+                        <outlet property="guessTextField" destination="dnS-9c-Jxf" id="cKo-2r-3Wv"/>
+                        <outlet property="inputA" destination="Yos-MU-Opb" id="y8J-wm-gdr"/>
+                        <outlet property="inputB" destination="foF-7R-fSS" id="Zul-hY-hiD"/>
+                        <outlet property="playerLog" destination="ncf-NB-WpA" id="eyp-td-MvZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.39999999999998" y="93.842364532019715"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V8V-up-R2v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vmN-BC-9kd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J5Q-PM-w4F">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Ts-H2-kM4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apq-cn-M93" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="93.842364532019715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
